@@ -177,18 +177,18 @@
                     <tr>
                         <td colspan="2" style="width:fit-content;background-color:rgba(26, 70, 132, 0.646);"><st class="switch" id="005" style="color:red" onclick="playPause(this)">o</st>&nbsp;0 + 5&nbsp;&nbsp;&nbsp;<label style="margin-left:85px;width:135px" for="hz control slider">Freq. Rate</label><input id="05" style="width:470px" onclick="newAudio(this);rates(this)"s onchange="newAudio(this);rates(this);" list="tickmarks" type="range" step="11" min="262" max="525" value="262" class="hz control slider"><c></c><br></td></tr>
                         <datalist id="tickmarks" style="color:red;text-align-last: justify;text-align: left;">
-                            <option label="C" value="0"></option>
-                            <option label="C#/Db" value="8.33"></option>
-                            <option label="D" value="16.66"></option>
-                            <option label="D#/Eb" value="24.99"></option>
-                            <option label="E" value="32"></option>
-                            <option label="F" value="41"></option>
-                            <option label="F#/Gb" value="48"></option>
-                            <option label="G" value="57"></option>
-                            <option label="G#/Ab" value="64"></option>
-                            <option label="A" value="74"></option>
-                            <option label="A#/Bb" value="80"></option>
-                            <option label="B" value="90"></option>
+                            <option label="C" value="0">|</option>
+                            <option label="C#/Db" value="8.33">|</option>
+                            <option label="D" value="16.66">|</option>
+                            <option label="D#/Eb" value="24.99">|</option>
+                            <option label="E" value="32">|</option>
+                            <option label="F" value="41">|</option>
+                            <option label="F#/Gb" value="48">|</option>
+                            <option label="G" value="57">|</option>
+                            <option label="G#/Ab" value="64">|</option>
+                            <option label="A" value="74">|</option>
+                            <option label="A#/Bb" value="80">|</option>
+                            <option label="B" value="90">|</option>
                         </datalist>
                     <tr>
                         <td colspan="2" style="width:fit-content;background-color:rgba(26, 70, 132, 0.646);">
@@ -208,7 +208,7 @@
                                 </tr>
                                 <tr>
                                     <td style="background-color:rgba(26, 70, 132, 0.646);">&nbsp;&nbsp;&nbsp;<label style="float:right;width:135px" for="thresh control slider">Threshold</label></td>
-                                    <td><input id="thresh" style="float:right;width:125px" type="range" onchange="rates(this)" min="-1200" max="1200" value="0" class="thresh control slider"></td>
+                                    <td><input id="thresh" style="float:right;width:125px" type="range" onchange="rates(this)" min="1" max="10" value="0" class="thresh control slider"></td>
                                     <td><c id="thresh-read">&nbsp;</c></td>
                                     <td style="background-color:rgba(26, 70, 132, 0.646);">&nbsp;&nbsp;&nbsp;<label style="float:right;width:135px" for="knee control slider">Knee</label></td>
                                     <td><input id="knee" style="float:right;width:125px" type="range" onchange="rates(this)" min="1" max="100" value="0" class="knee control slider"></td>
@@ -216,7 +216,7 @@
                                 </tr>
                                 <tr>
                                     <td style="background-color:rgba(26, 70, 132, 0.646);">&nbsp;&nbsp;&nbsp;<label style="float:right;width:135px" for="ratio control slider">Ratio</label></td>
-                                    <td><input id="ratio" style="width:125px" type="range" onchange="rates(this)" min="1" max="100" value="0" class="ratio control slider"></td>
+                                    <td><input id="ratio" style="width:125px" type="range" onchange="rates(this)" min="1" max="5" value="0" class="ratio control slider"></td>
                                     <td><c id="ratio-read">&nbsp;</c></td>
                                     <td style="background-color:rgba(26, 70, 132, 0.646);">&nbsp;&nbsp;&nbsp;<label style="float:right;width:135px" for="attack control slider">Attack</label></td>
                                     <td><input id="attack" style="float:right;width:125px" type="range" onchange="rates(this)" min="1" max="100" value="0" class="attack control slider"></td>

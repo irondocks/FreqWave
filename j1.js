@@ -328,7 +328,7 @@ function checks()
 function volume(osc, audio)
 {
     const gain = audio.createGain();
-    gain.gain.setValueAtTime(parseFloat(osc.value/100),audio.currentTime);
+    gain.gain.setValueAtTime(parseFloat(osc.value),audio.currentTime);
     gain.connect(audio.destination);
     return audio;
 }
